@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  <color name="colorPrimary">#EEE</color>
+    <color name="colorPrimaryDark">#FFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorChosen">#01B8BB</color>
+    <color name="colorUnChosen">#707070</color>
+
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+
+    <color name="devide_line">#CBCED2</color>
+</resources>

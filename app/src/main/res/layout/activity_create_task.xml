@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.iteam_fragment.CreateTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="    主题： "
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_task_name"
+            android:hint="  给个标题呗~~~~~"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/create_task_des"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_border"
+        android:hint="  描述一下该任务吧~"
+        android:textSize="16sp"
+        android:gravity="top"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:text="截止日期 ："
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="年"
+            android:id="@+id/date"
+            tools:ignore="HardcodedText,TextFields" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="月"
+            android:id="@+id/month"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:hint="日"
+            android:id="@+id/day"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFF"
+        android:background="@color/colorChosen"
+        android:text="提交"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

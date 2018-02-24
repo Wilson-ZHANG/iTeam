@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/team_image"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/group_image1"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <TextView
+                android:id="@+id/team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="团学联"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="19sp"
+                tools:ignore="HardcodedText,NestedWeights" />
+            <TextView
+                android:id="@+id/team_role"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="干事"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            tools:ignore="RtlHardcoded">
+            <ImageView
+                android:id="@+id/team_file"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
+                android:clickable="true"
+                android:src="@drawable/libraries"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+            <ImageView
+                android:id="@+id/team_open"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:src="@drawable/open"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

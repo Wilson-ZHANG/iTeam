@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.iteam_fragment.CreateTeam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入团队名称"
+        android:id="@+id/create_team_name"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/create_team_des"
+        android:hint="请输入团队描述"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="创建团队"
+        android:background="@color/colorChosen"
+        android:textColor="#FFF"
+        android:id="@+id/create_team_button"
+        tools:ignore="HardcodedText" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

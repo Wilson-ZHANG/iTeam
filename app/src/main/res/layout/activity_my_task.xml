@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/my_task__head"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#01B8BB"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/my_task_head_back"
+                android:layout_width="20dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:clickable="true"
+                android:src="@drawable/headback"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/my_task_head_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="存档任务"
+                android:textColor="#FFF"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="我接受的"
+                    android:textSize="18sp"
+                    android:clickable="true"
+                    android:textColor="#000"
+                    android:background="@drawable/bg_borderselect"
+                    android:focusable="true"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="我发出的"
+                    android:textSize="18sp"
+                    android:focusable="true"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/task_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

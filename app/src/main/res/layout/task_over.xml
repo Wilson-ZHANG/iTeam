@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe_refresh">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/task_head"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_borderselect">
+                <ImageView
+                    android:id="@+id/head_back"
+                    android:layout_width="20dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/headback"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/head_task_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="制作签到表"
+                    android:textSize="22sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="团队："
+                            android:textColor="#000"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tv_belong_team"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="团学联"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_border"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_task_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="制作讲座签到表"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="截止日期："
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            <TextView
+                                android:id="@+id/tv_tast_expectEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2017年4月1日"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly_receive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#000"
+                                android:text="负责人："
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                            <TextView
+                                android:id="@+id/tv_master"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:text="SML"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="开始日期："
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            <TextView
+                                android:id="@+id/tv_startTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="2017年3月21日"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly_finish"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        tools:ignore="RtlHardcoded">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#000"
+                                android:text="结束时间："
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                            <TextView
+                                android:id="@+id/tv_endTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:text="2017年3月30日"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#000"
+                                android:text="汇报："
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                            <TextView
+                                android:id="@+id/tv_feedback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:text="已经打印了14,15,16级的签到表"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#000"
+                                android:text="附加文件："
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            <GridView
+                                android:id="@+id/pic_gridView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:columnWidth="80dp"
+                                android:horizontalSpacing="10dp"
+                                android:numColumns="auto_fit"
+                                android:stretchMode="columnWidth"
+                                android:verticalSpacing="10dp"
+                                tools:ignore="NestedScrolling" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/iv_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:src ="@drawable/state_send"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

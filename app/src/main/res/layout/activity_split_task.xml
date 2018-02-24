@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.iteam_fragment.SplitTaskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="    主题： "
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/split_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  给个标题呗~~~~~"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/split_task_des"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_border"
+        android:hint="  描述一下该任务吧~"
+        android:textSize="16sp"
+        android:gravity="top"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="截止时间："
+            android:gravity="right"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/split_deadline"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            tools:ignore="LabelFor,TextFields" />
+
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:src="@drawable/zheshiyigenxuxian"
+        android:scaleType="fitXY"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+    
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:id="@+id/search_person_button"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/person_search"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <TextView
+                android:id="@+id/person_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="搜索："
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:hint="  邀请小伙伴一起完成该任务吧~"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <ListView
+        android:id="@+id/person_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+    
+    <Button
+        android:id="@+id/split_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="拆分"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

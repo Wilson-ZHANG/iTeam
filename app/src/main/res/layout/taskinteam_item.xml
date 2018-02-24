@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe_refresh">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/task_head"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_borderselect">
+                <ImageView
+                    android:id="@+id/head_back"
+                    android:layout_width="20dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/headback"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/head_task_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="礼仪"
+                    android:textSize="22sp"
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="团队："
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_belong_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="团学联"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发起人："
+                    android:textColor="#000"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_initiator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="邵明莉"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_task_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="活动现场迎接"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="截止日期："
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tv_tast_expectEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017年4月1日"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ly_receive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:text="执行人："
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/tv_master"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="SML"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="开始日期："
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tv_startTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="2017年3月21日"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ly_finish"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                tools:ignore="RtlHardcoded">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:text="结束时间："
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/tv_endTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="2017年3月30日"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="领取任务"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/bt_take"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

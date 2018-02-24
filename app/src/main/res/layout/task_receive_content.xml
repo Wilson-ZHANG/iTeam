@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe_refresh">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/task_head"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorChosen">
+                <ImageView
+                    android:id="@+id/head_back"
+                    android:layout_width="20dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/headback"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+                <TextView
+                    android:id="@+id/head_task_name_trc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="贴海报"
+                    android:textSize="22sp"
+                    android:textColor="#FFF"
+                    tools:ignore="HardcodedText" />
+                <ImageView
+                    android:id="@+id/iv_splitTask"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/add"
+                    android:focusable="true"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/tv_belong_team_trc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_border"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_task_des_trc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="="
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="截止日期："
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            <TextView
+                                android:id="@+id/tv_tast_expectEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/task_return_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_border"
+                        android:hint="  输入你的任务心得吧~"
+                        android:textSize="16sp"
+                        android:gravity="top"
+                        tools:ignore="HardcodedText" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginLeft="10dp"
+                        tools:ignore="RtlHardcoded">
+                        <GridView
+                            android:id="@+id/pic_gridView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:numColumns="auto_fit"
+                            android:columnWidth="80dp"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10dp"
+                            android:horizontalSpacing="10dp"
+                            tools:ignore="NestedScrolling" />
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/bt_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorChosen"
+                        android:textColor="#FFF"
+                        android:text="提交"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

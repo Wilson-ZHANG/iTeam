@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/task_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#01B8BB"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/team_head_back"
+            android:layout_width="20dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:src="@drawable/headback"
+            android:focusable="true"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/head_team_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="团学联"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_addTask"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:src="@drawable/add"
+            android:focusable="true"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_team_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_task"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:src="@drawable/task_selected"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_task"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="任务"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_member"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:src="@drawable/friend_unselected"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_member"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="成员"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:src="@drawable/team_unselected"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="状态"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

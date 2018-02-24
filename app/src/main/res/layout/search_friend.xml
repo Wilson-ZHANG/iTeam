@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.iteam_fragment.SearchFriend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入要搜索的好友手机号"
+        android:id="@+id/search_friend_phone"
+        tools:ignore="HardcodedText,TextFields" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:id="@+id/search_friend_phone_button"
+        tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/friend_result_image"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="30dp"
+                 android:id="@+id/friend_result_name"
+                 android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_friend_result_button"
+            android:text="添加好友"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

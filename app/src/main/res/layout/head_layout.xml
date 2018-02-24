@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.iteam_fragment.ui.HeadControlPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="#FFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.example.administrator.iteam_fragment.ui.CircleImageView
+        android:id="@+id/head_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlHardcoded" />
+    <TextView
+        android:id="@+id/middle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#FFF"
+        tools:ignore="RelativeOverlap" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/add_team"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </RelativeLayout>
+</com.example.administrator.iteam_fragment.ui.HeadControlPanel>

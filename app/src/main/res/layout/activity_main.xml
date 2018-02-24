@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/LinerLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimaryDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways|snap" />
+            <include
+                android:id="@+id/head_layout"
+                layout="@layout/head_layout"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/head_layout"
+                android:background="#FF707070"
+                tools:ignore="ObsoleteLayoutParam" />
+
+        </LinearLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFDDDDDD"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:id="@+id/task_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables,UselessParent">
+
+                    <ImageView
+                        android:id="@+id/task_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/task_unselected"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/task_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="任务"
+                        android:textColor="#707070"
+                        android:textSize="10sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/team_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables,UselessParent">
+
+                    <ImageView
+                        android:id="@+id/team_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/team_unselected"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/team_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="团队"
+                        android:textColor="#707070"
+                        android:textSize="10sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/message_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    tools:ignore="RtlHardcoded,UseCompoundDrawables,UselessParent">
+
+                    <ImageView
+                        android:id="@+id/message_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/message_unselected"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/message_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="消息"
+                        android:textColor="#707070"
+                        android:textSize="10sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/workshop_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables,UselessParent">
+
+                    <ImageView
+                        android:id="@+id/group_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/group_unselected"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/group_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="工作组"
+                        android:textColor="#707070"
+                        android:textSize="10sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/colorChosen"
+        app:menu="@menu/nav_menu" />
+</android.support.v4.widget.DrawerLayout>

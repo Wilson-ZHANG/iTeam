@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/message_image"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/mail"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/message_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="系统消息"
+                android:textColor="#000"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,NestedWeights" />
+            <TextView
+                android:id="@+id/message_des"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="任务一即将到期"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            tools:ignore="RtlHardcoded">
+            <ImageView
+                android:id="@+id/message_open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:src="@drawable/open"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
